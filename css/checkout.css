@@ -1,0 +1,210 @@
+:root {
+   --charcoal-color: #181818;
+   --light-silver-color: #E1E2E2;
+   --black-color: #000000;
+   --cyan-color: cyan;
+   --dark-cyan: rgb(53, 136, 136);
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   background-color: var(--black-color);
+   color: var(--light-silver-color);
+   transition: background-color 0.5s ease, color 0.5s ease;
+   margin: 0;
+   padding: 0;
+}
+
+.checkout_container {
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   transition: background-color 0.5s ease;
+}
+
+.checkout-form {
+   background-color: var(--charcoal-color);
+   color: var(--light-silver-color);
+   border-radius: 10px;
+   padding: 20px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   animation: fadeInUp 1s ease;
+   max-width: 600px;
+   width: 100%;
+}
+
+.heading {
+   font-size: 28px;
+   margin-bottom: 20px;
+   font-weight: 700;
+   letter-spacing: 1px;
+   opacity: 0.9;
+   color: var(--cyan-color);
+}
+
+.flex {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.user-input {
+   width: 48%;
+   margin-bottom: 20px;
+}
+
+.user-input span {
+   font-size: 16px;
+   color: var(--light-silver-color);
+   display: block;
+   margin: 8px;
+}
+
+.user-input input{
+   width: 90%;
+   padding: 10px;
+   border: 1px solid cyan;
+   background-color: var(--charcoal-color);
+   color: var(--light-silver-color);
+   border-radius: 5px;
+   outline: none;
+   transition: background-color 0.3s ease, color 0.3s ease;
+}
+.user-input input:focus, .user-input select:focus{
+   border: 1px solid var(--light-silver-color);
+}
+
+.user-input select {
+   width: 98%;
+   padding: 10px;
+   border: 1px solid cyan;
+   background-color: var(--charcoal-color);
+   color: var(--light-silver-color);
+   border-radius: 5px;
+   outline: none;
+   cursor: pointer;
+   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn {
+   display: inline-block;
+   text-decoration: none;
+   font-size: 16px;
+   padding: 10px 20px;
+   background-color: var(--dark-cyan);
+   color: var(--black-color);
+   border-radius: 5px;
+   transition: background-color 0.3s ease, color 0.3s ease;
+   margin-top: 20px;
+}
+
+.btn:hover {
+   background-color: var(--cyan-color);
+   color: var(--black-color);
+}
+
+.grand-total {
+   display: block;
+   margin-top: 20px;
+   color: var(--cyan-color);
+   font-size: 18px;
+   font-weight: 600;
+}
+
+@keyframes fadeInUp {
+   0% {
+       transform: translateY(20px);
+       opacity: 0;
+   }
+   100% {
+       transform: translateY(0);
+       opacity: 1;
+   }
+}
+
+/* Style for the pop-up container */
+.order-message-container {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ background-color: rgba(0, 0, 0, 0.7);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 999;
+}
+
+.message-container {
+   background-color: var(--charcoal-color);
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+   text-align: center;
+   max-width: 80%;
+}
+
+/* Style for the heading and total price */
+.message-container h3 {
+   font-size: 24px;
+   color: var(--cyan-color);
+   margin-bottom: 10px;
+}
+
+.order-detail {
+   margin-bottom: 20px;
+}
+
+.order-detail span {
+   display: block;
+   font-size: 16px;
+   color: var(--light-silver-color);
+}
+
+.order-detail .total {
+   font-size: 18px;
+   color: var(--cyan-color);
+   font-weight: 600;
+}
+
+/* Style for customer details */
+.customer-details p {
+   font-size: 16px;
+   color: var(--light-silver-color);
+   margin-bottom: 10px;
+}
+
+.customer-details span {
+   font-weight: 600;
+   color: var(--cyan-color);
+}
+
+/* Style for the "Continue Shopping" button */
+.btn {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: var(--cyan-color);
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   font-size: 16px;
+   cursor: pointer;
+   text-decoration: none;
+   transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  color: black;
+   transform: scale(1.05);
+   transition: ease-in 0.2s;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+   .message-container {
+      max-width: 90%;
+   }
+}

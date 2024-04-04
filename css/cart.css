@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: lightgray;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.shopping-cart {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+}
+
+th {
+    background-color: cyan;
+    color: black;
+}
+
+table img {
+    max-width: 100px;
+    height: auto;
+}
+
+.update-form {
+    display: flex;
+    align-items: center;
+}
+
+.update-form input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.update-form input[type="submit"] {
+    background-color: cyan;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    color: red;
+    text-decoration: none;
+}
+
+.delete-btn:hover {
+    color: cyan;
+}
+
+.option-btn {
+    background-color: cyan;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.option-btn.disabled {
+    background-color: lightgray;
+    pointer-events: none;
+}
+
+.checkout-btn {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.checkout-btn a {
+    background-color: cyan;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.checkout-btn a.disabled {
+    background-color: lightgray;
+    pointer-events: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+
+    table img {
+        max-width: 60px;
+    }
+
+    .checkout-btn {
+        text-align: center;
+    }
+}

@@ -1,0 +1,112 @@
+@import url('colorCodes.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin',sans-serif;
+}
+.contact{
+    padding: 40px 15%;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 6rem;
+  }
+  .contact-image img{
+    max-width: 100%;
+    width: 720px;
+    height: auto;
+    border-radius: 10px;
+  }
+  .contact_form h1
+  {
+    font-size: 70px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .contact_form span{
+    color: cyan;
+  }
+  
+  .contact_form p{
+    color: gray;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+    margin-bottom: 3.8rem;
+  }
+  .contact_form form{
+    position: relative;
+  }
+  .contact_form form input,form textarea{
+    width: 100%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background: var(--charcoal-color);
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+  }
+  .contact_form textarea{
+    resize: none;
+    height: 200px;
+  }
+  .contact_form form .btn{
+    display: inline-block;
+    background: cyan;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 200px;
+    transition: ease 0.20s;
+    cursor: pointer;
+  }
+  .contact_form form .btn:hover{
+    border: 2px solid cyan;
+    background: transparent;
+    transform: scale(1.1);
+  }
+
+  @media (max-width:1570px){
+    .contact{
+        padding: 80px 3%;
+        transition: 0.2s;
+    }
+    .contact_form h1{
+        font-size: 55px;
+    }
+    .contact_form p{
+        margin-bottom: 3rem;
+    }
+  }
+  @media (max-width:1080px){
+    .contact{
+        grid-gap: 2rem;
+        transition: 0.3s;
+    }
+  }
+  @media (max-width:1080px){
+    .contact{
+        grid-template-columns: 1fr;
+        transition: 0.3s;
+    }
+    .contact_form{
+        order: 2;
+    }
+    .contact-image img{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+  }

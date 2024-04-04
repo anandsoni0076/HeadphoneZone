@@ -1,0 +1,146 @@
+/* CSS for the form container */
+
+.form-container {
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: var(--charcoal-color);
+    padding: 30px;
+    border-radius: 10px;
+    color: var(--light-silver-color);
+}
+
+.form-container p {
+    color: var(--light-silver-color);
+    margin: 10px 0;
+}
+
+.form-container input[type="text"],
+.form-container input[type="file"] {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid var(--cyan-color);
+    background-color: transparent;
+    color: var(--light-silver-color);
+    border-radius: 5px;
+}
+
+.form-container input[type="text"]::placeholder,
+.form-container input[type="file"]::placeholder {
+    color: #ccc;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="file"]:focus {
+    outline: none;
+    border-color: var(--light-silver-color);
+}
+
+.form-container input[type="submit"] {
+    width: 50%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: var(--cyan-color);
+    color: var(--black-color);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: rgb(142, 250, 250);
+}
+
+/* Style the select dropdown */
+.form-container select {
+    width: 50%;
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 1px solid var(--cyan-color);
+    color: var(--light-silver-color);
+    background-color: var(--black-color);
+}
+
+/* Style the option elements */
+.form-container option {
+    color: var(--light-silver-color);
+    background-color: var(--black-color);
+}
+
+/* CSS for the table */
+.table {
+    width: 100%;
+    border-collapse:collapse;
+    margin-bottom: 1000px;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.table th {
+    background-color: var(--cyan-color);
+    color: var(--black-color);
+}
+
+.table td {
+    background-color: var(--charcoal-color);
+    color: var(--light-silver-color);
+}
+
+.table td.details {
+    width: 200px;
+}
+
+.table td:last-child {
+    padding-right: 20px;
+}
+
+
+.table img {
+    display: block;
+    margin: auto;
+    width: 100px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.status {
+    background-color: var(--charcoal-color); 
+    border: 1px solid cyan;
+    padding: 8px;
+    color: var(--light-silver-color);
+    border-radius: 5px;
+  }
+
+  .update_btn, .table a.btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .update_btn:hover ,.table a.btn:hover{
+    background-color: #2980b9;
+    transform: scale(1.05); 
+  }
+  
+/* For pending status */
+.table .pending {
+    color: red;
+  }
+  
+  /* For delivered status */
+ .table .delivered {
+    color: rgb(0, 255, 0); 
+  }  
+  

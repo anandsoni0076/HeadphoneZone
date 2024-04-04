@@ -1,0 +1,205 @@
+@import url('colorCodes.css');
+
+html{
+    scroll-behavior: smooth;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--black-color);
+}
+
+/* sidebar css */
+.sidebar {
+    width: 350px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: var(--charcoal-color); /* Changed to charcoal color */
+    z-index: 100;
+}
+
+.products_spacing {
+    padding-top: 500px;
+}
+
+#products_spacing1,#orders_spacing,#accounts_spacing1,#msgs_spacing1 {
+    padding-top: 100px;
+}
+
+#products,#orders , #accounts, #msgs{
+    text-align: center;
+    color: cyan; /* Changed to cyan color */
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 5px solid var(--light-silver-color);
+    line-height: 0.1em;
+}
+
+#products span,#orders span,#accounts span, #msgs span {
+    background: var(--black-color);
+    padding: 0 20px;
+}
+
+.sidebar-logo {
+    height: 90px;
+    padding: 1rem 0rem 1rem 2rem;
+    color: cyan;
+}
+
+.sidebar-logo img {
+    vertical-align: middle;
+}
+
+.sidebar-logo span {
+    display: inline-block;
+    padding-right: 1rem;
+}
+
+.sidebar-menu {
+    margin-top: 1rem;
+}
+
+.sidebar-menu li {
+    width: 100%;
+    margin-bottom: 1.7rem;
+    padding-left: 2rem;
+}
+
+.sidebar-menu a {
+    padding-left: 1rem;
+    display: block;
+    color: var(--light-silver-color);
+    font-size: 1.1rem;
+}
+
+.sidebar-menu a span:first-child {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+
+.sidebar-menu a.active {
+    background: cyan;
+    color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 30px 0 0 30px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Main Content Area Styles */
+.main {
+    margin-left: 350px;
+    padding: 1rem;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.main.active {
+    margin-left: 0;
+}
+
+/* siderbar css ends */
+.main-content {
+    margin-left: 350px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background: cyan;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    left: 350px;
+    width: calc(100% - 350px);
+    top: calc(90px - 5.6rem);
+    /* Adjusted top value */
+    z-index: 100;
+}
+
+header h2 {
+    color: var(--charcoal-color);
+}
+
+header label span {
+    font-size: 1.7rem;
+    padding-right: 1rem;
+}
+
+.user-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-wrapper small {
+    display: inline-block;
+    color: gray;
+}
+
+main {
+    margin-top: 90px;
+    padding: 2rem 1.5rem;
+    min-height: calc(100vh - 90px);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
+}
+.cards h1{
+    color: cyan;
+}
+
+.card-single {
+    display: flex;
+    border-radius: 4px;
+    flex-direction: column;
+    /* Ensure proper stacking of elements */
+    background: var(--charcoal-color); 
+    padding: 2rem;
+    position: relative;
+}
+
+.card-single .icon {
+    position: absolute;
+    top: 30px;
+    right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.card-single .content {
+    flex-grow: 1;
+}
+
+.card-single span:first-child {
+    font-size: 3rem;
+    color: cyan
+}
+
+.card-text {
+    color: cyan;
+}
+
+.card-single:last-child {
+    background: cyan; /* Changed to charcoal color */
+}
+
+.card-single:last-child h1,
+.card-single:last-child div:first-child span,
+.card-single:last-child div:last-child span {
+    background: cyan;
+    color:black;
+}
